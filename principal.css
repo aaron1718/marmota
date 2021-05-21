@@ -1,0 +1,65 @@
+body {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: linear-gradient(90deg, rgba(2, 0, 24, 0.651) 0%, rgba(56, 62, 68, 0.548) 35%, rgba(0, 0, 0, 0.63) 100%);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+
+    z-index: -1;
+}
+
+h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 92px;
+    padding: 80px 50px;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: rgba(226, 226, 226, 0.89);
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    font: italic bold 100px Georgia, Serif;
+    text-shadow: 5px 5px 10px black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 80px 50px;
+    font: italic bold, Georgia, Serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 240, 0.925);
+    text-shadow: 5px 5px 10px black;
+
+}
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    background: rgba(0, 0, 0, 0.658);
+    color: white;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
